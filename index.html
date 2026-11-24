@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pranita Kulkarni | Software Developer Portfolio</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<style>
+  :root { --green:#088178; --dark:#1b2a28; --soft:#e8f6ea; --text:#465b52; }
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Roboto, Arial, sans-serif; }
+  html { scroll-behavior:smooth; }
+  body { color:var(--text); line-height:1.6; background:#fff; }
+  a { color:var(--green); text-decoration:none; }
+  header { position:sticky; top:0; background:#fff; box-shadow:0 2px 12px rgba(0,0,0,.08); z-index:10;
+           display:flex; justify-content:space-between; align-items:center; padding:16px 8%; flex-wrap:wrap; gap:8px; }
+  header .logo { font-weight:800; font-size:22px; color:var(--dark); }
+  header nav a { margin-left:22px; color:var(--dark); font-weight:600; font-size:15px; }
+  header nav a:hover { color:var(--green); }
+  section { padding:80px 8%; }
+  h2 { color:var(--dark); font-size:32px; margin-bottom:8px; }
+  h2 + .bar { width:60px; height:4px; background:var(--green); border-radius:2px; margin-bottom:32px; }
+  #home { min-height:85vh; display:flex; flex-direction:column; justify-content:center; background:linear-gradient(135deg,var(--soft),#fff); }
+  #home small { color:var(--green); font-weight:700; letter-spacing:1px; }
+  #home h1 { font-size:54px; color:var(--dark); line-height:1.15; margin:10px 0; }
+  #home h1 span { color:var(--green); }
+  #home p { max-width:600px; margin-bottom:28px; font-size:18px; }
+  .btn { display:inline-block; background:var(--green); color:#fff; padding:13px 28px; border-radius:4px; font-weight:600; margin:0 12px 12px 0; border:2px solid var(--green); transition:.2s; }
+  .btn.alt { background:transparent; color:var(--green); }
+  .btn:hover { opacity:.85; }
+  .social { margin-top:10px; }
+  .social a { display:inline-flex; align-items:center; justify-content:center; width:46px; height:46px; border-radius:50%; background:var(--green); color:#fff; font-size:20px; margin-right:12px; transition:.2s; }
+  .social a:hover { transform:translateY(-3px); background:var(--dark); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; }
+  .card { border:1px solid #e1e8e3; border-radius:8px; padding:24px; transition:.25s; background:#fff; }
+  .card:hover { transform:translateY(-4px); box-shadow:0 10px 24px rgba(8,129,120,.15); }
+  .card h3 { color:var(--dark); margin-bottom:4px; }
+  .card .meta { color:var(--green); font-weight:600; font-size:14px; margin-bottom:10px; }
+  .card ul { padding-left:18px; }
+  .card li { margin-bottom:6px; font-size:15px; }
+  .tags span { display:inline-block; background:var(--soft); color:var(--green); font-size:12px; font-weight:700; padding:4px 10px; border-radius:20px; margin:10px 6px 0 0; }
+  .skill-group { margin-bottom:22px; }
+  .skill-group h4 { color:var(--dark); margin-bottom:10px; }
+  .skills { display:flex; flex-wrap:wrap; gap:10px; }
+  .skills span { background:var(--green); color:#fff; padding:7px 16px; border-radius:30px; font-weight:600; font-size:14px; }
+  #about p { max-width:760px; margin-bottom:14px; }
+  #experience, #certs { background:#f7fbf8; }
+  #contact { background:var(--soft); text-align:center; }
+  #contact .bar { margin-left:auto; margin-right:auto; }
+  #contact p { margin-bottom:20px; }
+  footer { text-align:center; padding:20px; font-size:14px; background:var(--dark); color:#cfe3df; }
+  @media (max-width:640px){ #home h1{font-size:38px;} header nav a{margin-left:12px;font-size:13px;} section{padding:60px 6%;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Pranita Kulkarni</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <small>HELLO, I'M</small>
+  <h1>Pranita Kulkarni,<br><span>Software Developer</span></h1>
+  <p>Computer Science &amp; Engineering graduate building scalable, user-friendly applications with Java, Spring Boot, React and MySQL.</p>
+  <div>
+    <a class="btn" href="#projects">View My Work</a>
+    <a class="btn alt" href="mailto:pranitapskulkarni@gmail.com">Email Me</a>
+  </div>
+  <div class="social">
+    <a href="https://github.com/pranita0452" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/pranitakulkarni05" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="mailto:pranitapskulkarni@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2><div class="bar"></div>
+  <p>I hold a Bachelor of Engineering in Computer Science and Engineering from VSM's Somshekhar R. Kothiwale Institute of Technology (2019 &ndash; 2025) with a CGPA of 8.90/10.</p>
+  <p>I have worked as a Java Full Stack Developer Intern and an AI/ML Intern, and I enjoy both building web applications and working on machine learning projects such as emotion detection. I am looking for a Software Developer role where I can build scalable, user-friendly applications and keep learning.</p>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2><div class="bar"></div>
+  <div class="skill-group"><h4>Languages</h4><div class="skills"><span>Java</span><span>Advanced Java</span><span>Python</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div></div>
+  <div class="skill-group"><h4>Frameworks</h4><div class="skills"><span>Spring Boot</span><span>React</span><span>Bootstrap</span></div></div>
+  <div class="skill-group"><h4>ML / AI</h4><div class="skills"><span>ML Libraries</span><span>OpenCV</span><span>scikit-learn</span><span>Pandas</span><span>NumPy</span></div></div>
+  <div class="skill-group"><h4>Database</h4><div class="skills"><span>MySQL</span></div></div>
+  <div class="skill-group"><h4>Tools</h4><div class="skills"><span>Git / GitHub</span><span>VS Code</span><span>Postman</span><span>Jupyter Notebook</span></div></div>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2><div class="bar"></div>
+  <div class="grid">
+    <div class="card">
+      <h3>Java Full Stack Developer Intern</h3>
+      <div class="meta">SevenMentor, Pune &middot; Feb 2025 &ndash; Aug 2025</div>
+      <ul><li>Built and deployed full-stack web applications with Java, Spring Boot, React and MySQL, with interactive front-end interfaces and robust backend services.</li></ul>
+    </div>
+    <div class="card">
+      <h3>AI/ML Intern</h3>
+      <div class="meta">Airobosoft Pvt Ltd, Bangalore &middot; Oct 2023 &ndash; Nov 2023</div>
+      <ul><li>Designed and trained machine learning models using Python, Pandas, NumPy and scikit-learn to perform classification.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2><div class="bar"></div>
+  <div class="grid">
+    <div class="card">
+      <h3>Multimodal Sentiment Analysis</h3>
+      <ul>
+        <li>Preprocessed text, image and video datasets using NLTK and OpenCV for emotion detection, reaching 87% accuracy.</li>
+        <li>Built a dashboard with visual insights and real-time sentiment reports.</li>
+        <li>Used pre-trained models (BERT/LSTM for text, deep learning for audio, CNNs for images/videos) for real-time analysis and historical tracking.</li>
+      </ul>
+      <div class="tags"><span>Python</span><span>OpenCV</span><span>NLTK</span><span>BERT</span><span>CNN</span></div>
+    </div>
+    <div class="card">
+      <h3>Facial Emotion Detection</h3>
+      <ul>
+        <li>Classified seven emotions (happy, sad, angry, fear, surprise, disgust, neutral) using facial landmarks and OpenCV.</li>
+        <li>Trained a CNN on 35,000 images, achieving 88% precision, with real-time webcam detection.</li>
+      </ul>
+      <div class="tags"><span>Python</span><span>OpenCV</span><span>CNN</span></div>
+    </div>
+    <div class="card">
+      <h3>E-Commerce Website</h3>
+      <ul>
+        <li>Responsive multi-page online clothing store: home, shop, product details with image gallery, blog, about, contact and cart.</li>
+        <li>Working shopping cart with add/remove, quantity update and coupon code, saved using localStorage.</li>
+      </ul>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      <p style="margin-top:14px"><a href="https://pranita0452.github.io/E-COMMERCE-WEBSITE-PROJECT/" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a></p>
+      <!-- Once you upload the project, change the link above to the exact repo, e.g. https://github.com/pranita0452/e-commerce-website -->
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <h2>Education &amp; Certifications</h2><div class="bar"></div>
+  <div class="grid">
+    <div class="card">
+      <h3>B.E. Computer Science &amp; Engineering</h3>
+      <div class="meta">VSM's Somshekhar R. Kothiwale Institute of Technology &middot; 2019 &ndash; 2025</div>
+      <p>CGPA: 8.90/10</p>
+    </div>
+    <div class="card">
+      <h3>Pre-University (Science)</h3>
+      <div class="meta">KLE's Independent PU College, Nipani &middot; 2019 &ndash; 2021</div>
+      <p>90.16%</p>
+    </div>
+    <div class="card">
+      <h3>Research Paper</h3>
+      <p>Published &ldquo;Django-Based Framework&rdquo; for Multimodal Sentiment Analysis in the International Journal of Research Publications and Reviews.</p>
+    </div>
+    <div class="card">
+      <h3>Certificate of Participation</h3>
+      <p>48th KCST SPP Exhibition.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Get In Touch</h2><div class="bar"></div>
+  <p>I'm open to Software Developer opportunities. Let's connect!</p>
+  <a class="btn" href="mailto:pranitapskulkarni@gmail.com"><i class="fas fa-envelope"></i>&nbsp; pranitapskulkarni@gmail.com</a>
+  <a class="btn alt" href="https://www.linkedin.com/in/pranitakulkarni05" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i>&nbsp; LinkedIn</a>
+  <a class="btn alt" href="https://github.com/pranita0452" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>&nbsp; GitHub</a>
+</section>
+
+<footer>&copy; 2026 Pranita Kulkarni. All rights reserved.</footer>
+
+</body>
+</html>
